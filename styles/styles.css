@@ -1,0 +1,25 @@
+.container
+{
+    margin: auto;
+    margin-top: 5%;
+    width: 290px;
+}
+
+.textBox
+{
+    width: 290px;
+    border: 0;
+    font-size: 28px;
+    color: #505050;
+    margin: auto;
+    padding: 0px;
+}
+
+.downloadButton
+{
+    font-size:12px;
+    padding-top:5px;
+    color:#7f7fff;
+    cursor:pointer;
+    
+}

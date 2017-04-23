@@ -1,12 +1,10 @@
-.container
-{
+.container {
     margin: auto;
     margin-top: 5%;
     width: 290px;
 }
 
-.textBox
-{
+.textBox {
     width: 290px;
     border: 0;
     font-size: 28px;
@@ -15,11 +13,23 @@
     padding: 0px;
 }
 
-.downloadButton
-{
+.downloadButton {
     font-size:12px;
     padding-top:5px;
     color:#7f7fff;
     cursor:pointer;
     
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e9e9e9;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #e9e9e9;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #e9e9e9;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #e9e9e9;
 }

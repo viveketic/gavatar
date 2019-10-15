@@ -5,6 +5,6 @@ Web app to generate avatars for GitHub.
 * [Boban Spiroski](https://github.com/usb).
 
 ## Comments
-Leave your comemnts here.
+Leave your comments here.
 
 https://news.ycombinator.com/item?id=20787776

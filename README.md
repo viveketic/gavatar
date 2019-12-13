@@ -8,4 +8,4 @@ Web app to generate avatars for GitHub.
 https://news.ycombinator.com/item?id=20787776
 
 ## Similar Apps
-[gblocks](https://github.com/viveketic/gblocks)
+* [gblocks](https://github.com/viveketic/gblocks)

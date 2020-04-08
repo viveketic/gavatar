@@ -1,4 +1,4 @@
-## gavatar
+## Gavatar
 Web app to generate avatars for GitHub.
 
 ### Credits

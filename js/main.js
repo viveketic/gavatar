@@ -59,7 +59,6 @@ var Gavatar = new function() {
                     ctx.fillRect(x * blockSize + avatarMargin, 
                                  y * blockSize + avatarMargin, 
                                  blockSize, blockSize);
-                    ctx.fillStyle = "#" + hex;
                     ctx.fillRect((5 - 1 - x) * blockSize + avatarMargin, 
                                  y * blockSize + avatarMargin, 
                                  blockSize, blockSize);

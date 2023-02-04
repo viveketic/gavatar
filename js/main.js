@@ -54,15 +54,15 @@ var Gavatar = new function() {
         for(var x = 0; x < 3; x++) {
             for(var y = 0; y < 5; y++) {
                 var r = rand(parseInt(seed) + x * 3 + y);
-                if(r < num/100.0) {
-                    ctx.fillStyle = "#" + hex;
-                    ctx.fillRect(x * blockSize + avatarMargin, 
-                                 y * blockSize + avatarMargin, 
-                                 blockSize, blockSize);
-                    ctx.fillRect((5 - 1 - x) * blockSize + avatarMargin, 
-                                 y * blockSize + avatarMargin, 
-                                 blockSize, blockSize);
-                }
+				if (r >= num/100.0) continue;
+
+				ctx.fillStyle = "#" + hex;
+				ctx.fillRect(x * blockSize + avatarMargin, 
+							 y * blockSize + avatarMargin, 
+							 blockSize, blockSize);
+				ctx.fillRect((5 - 1 - x) * blockSize + avatarMargin, 
+							 y * blockSize + avatarMargin, 
+							 blockSize, blockSize);
             }
         }
     }
@@ -74,26 +74,8 @@ function rand(x) {
 }  
 
 function download(filename, canvas) {
-    var canvas = canvas;
-    var canvasContext = canvas.getContext("2d");
-    var imageData = 
-        canvasContext.getImageData(0,0,canvas.width,canvas.height);
-
-    var saveCanvas = document.createElement("canvas");
-    saveCanvas.width = canvas.width;
-    saveCanvas.height = canvas.height;
-    var saveCanvasContext = saveCanvas.getContext('2d');
-    saveCanvasContext.putImageData(imageData, 0, 0);
-    var link = document.createElement('a'), e;
+    var link = document.createElement('a');
     link.download = filename;
-    link.href = saveCanvas.toDataURL();
-    if (document.createEvent) {
-        e = document.createEvent("MouseEvents");
-        e.initMouseEvent("click", true, true, window,
-                         0, 0, 0, 0, 0, false, false, false, false, 0, null);
-        
-        link.dispatchEvent(e);
-    } else if (lnk.fireEvent) {
-        link.fireEvent("onclick");
-    }
+    link.href = canvas.toDataURL();
+	link.click();
 }

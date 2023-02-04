@@ -73,7 +73,6 @@ function rand(x) {
     return (( 1.0 - ( (z * (z * z * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0)+1.0)/2.0;
 }  
 
-//Download
 function download(filename, canvas) {
     var canvas = canvas;
     var canvasContext = canvas.getContext("2d");
